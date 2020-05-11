@@ -1,0 +1,23 @@
+.price-list {
+  @include desktop {
+    padding-bottom: 98px;
+  }
+
+  & table {
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  & th {
+    padding: 22px 37px 19px 24px;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  & td {
+    padding: 25px 27px;
+    font-size: 22px;
+    border-top: 1px solid #e7e7e7;
+  }
+}

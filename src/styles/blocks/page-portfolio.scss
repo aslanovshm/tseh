@@ -1,0 +1,58 @@
+.page-portfolio__head {
+  @include desktop {
+    padding-bottom: 74px;
+  }
+}
+
+.page-portfolio__head-title {
+  @include mobile-only {
+    font-size: 43px;
+  }
+
+  @include desktop {
+    margin-bottom: 42px;
+  }
+}
+
+.page-portfolio__head-desc {
+  @include mobile-only {
+    margin-bottom: 27px;
+  }
+}
+
+.page-portfolio__portfolio {
+  @include mobile-only {
+    padding-top: 0;
+  }
+
+  @include desktop {
+    padding: 79px 0 33px;
+    border-bottom: 1px solid #dadada;
+  }
+}
+
+.page-portfolio__portfolio-list {
+  @include mobile-only {
+    margin-bottom: 30px;
+  }
+
+  @include desktop {
+    margin-bottom: 8px;
+  }
+}
+
+.page-portfolio__about-us {
+  @include mobile-only {
+    min-height: auto;
+  }
+  @include desktop {
+    padding: 59px 0 140px;
+  }
+}
+
+.page-portfolio__portfolio-more {
+  @include mobile-only {
+    font-size: 11px;
+    line-height: 0.83px;
+  }
+}

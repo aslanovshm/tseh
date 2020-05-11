@@ -1,0 +1,6 @@
+.blog {
+  @include desktop {
+    padding: 61px 0 63px;
+    background-color: #f1f0f1;
+  }
+}

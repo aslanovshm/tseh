@@ -1,0 +1,15 @@
+.page-contact__inner {
+  position: relative;
+
+  @include desktop {
+    padding-bottom: 70px;
+  }
+}
+
+.page-contacts__head {
+  padding-bottom: 20px;
+
+  @include desktop {
+    padding-bottom: 39px;
+  }
+}

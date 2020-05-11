@@ -1,0 +1,42 @@
+.breadcrumbs {
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+
+  @include desktop {
+    margin: 0 0 51px;
+  }
+}
+
+.breadcrumbs__item {
+  position: relative;
+  display: inline-block;
+  font-size: 12.5px;
+  text-decoration: none;
+  color: rgba(49, 58, 65, 0.57);
+
+  &:not(:last-child) {
+    margin-right: 5px;
+    padding-right: 10px;
+  }
+
+  @include desktop {
+    font-size: 18.5px;
+  }
+
+  &:after {
+    content: "-";
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &--current:after {
+    content: "";
+  }
+
+  & a {
+    text-decoration: none;
+    color: rgba(49, 58, 65, 0.57);
+  }
+}

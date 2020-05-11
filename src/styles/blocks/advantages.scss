@@ -1,0 +1,157 @@
+.advantages {
+  padding-top: 34px;
+
+  text-align: center;
+  @include desktop {
+    padding-top: 94px;
+  }
+}
+
+.advantages__heading {
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 20px;
+
+  @include desktop {
+    margin-bottom: 42px;
+    font-size: 30.5px;
+    line-height: 36px;
+  }
+
+  & span {
+    display: block;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 700;
+
+    @include desktop {
+      font-size: 48.5px;
+      line-height: 55px;
+    }
+  }
+}
+
+.advantages__desc {
+  margin: 0 0 20px;
+
+  @include mobile-only {
+    font-size: 7px;
+    line-height: 11px;
+  }
+
+  @include desktop {
+    margin-bottom: 114px;
+    padding: 0 200px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include mobile-only {
+    width: 290px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  box-sizing: border-box;
+  width: 123px;
+  padding: 56px 0 0;
+  text-align: center;
+
+  @include mobile-only {
+    margin-bottom: 27px;
+  }
+
+  @include desktop {
+    width: 220px;
+    padding-top: 128px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+  }
+
+  &--lecal:before {
+    width: 34px;
+    height: 34px;
+    background-image: url("../images/icon-scissors-mobile@1x.png");
+
+    @include desktop {
+      width: 74px;
+      height: 74px;
+      background-image: url("../images/icon-scissors-desktop@1x.png");
+    }
+  }
+
+  &--checking:before {
+    width: 31px;
+    height: 31px;
+    background-image: url("../images/icon-zoom-mobile@1x.png");
+
+    @include desktop {
+      width: 68px;
+      height: 68px;
+      background-image: url("../images/icon-zoom-desktop@1x.png");
+    }
+  }
+
+  &--logistic:before {
+    width: 37px;
+    height: 27px;
+    background-image: url("../images/icon-track-mobile@1x.png");
+
+    @include desktop {
+      width: 82px;
+      height: 59px;
+      background-image: url("../images/icon-track-desktop@1x.png");
+    }
+  }
+
+  &--tehnology:before {
+    width: 31px;
+    height: 34px;
+    background-image: url("../images/icon-waitress-mobile@1x.png");
+
+    @include desktop {
+      width: 69px;
+      height: 74px;
+      background-image: url("../images/icon-waitress-desktop@1x.png");
+    }
+  }
+
+  &--otk:before {
+    width: 34px;
+    height: 34px;
+    background-image: url("../images/icon-otk-mobile@1x.png");
+
+    @include desktop {
+      width: 75px;
+      height: 75px;
+      background-image: url("../images/icon-otk-desktop@1x.png");
+    }
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  font-size: 10.5px;
+  line-height: 14.5px;
+  font-weight: 300;
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

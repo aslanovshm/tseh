@@ -1,0 +1,176 @@
+.feedback {
+  @include mobile-only {
+    text-align: center;
+  }
+}
+
+.feedback__inner {
+  position: relative;
+}
+
+.feedback--first-variant {
+  @include mobile-only {
+    background-color: #e5e5e6;
+  }
+
+  @include desktop {
+    background-image: linear-gradient(to top, #e5e5e6 83%, transparent 50%);
+  }
+}
+
+.feedback--first-variant .feedback__inner {
+  padding: 50px 0 26px;
+
+  @include desktop {
+    padding: 175px 0 70px;
+    background-image: url("../images/girl-green-dress@1x.png");
+    background-repeat: no-repeat;
+    background-position: top right 105px;
+  }
+}
+
+.feedback--second-variant {
+  @include mobile-only {
+    background-color: #e5e5e6;
+  }
+
+  @include desktop {
+    background-image: linear-gradient(to top, #e5e5e6 83%, transparent 50%);
+  }
+}
+
+.feedback--second-variant .feedback__inner {
+  padding: 48px 0 25px;
+
+  @include desktop {
+    padding: 173px 0 72px;
+    background-image: url("../images/girl-blue-jacket@1x.png");
+    background-repeat: no-repeat;
+    background-position: top right 26px;
+  }
+}
+
+.feedback--third-variant {
+  background-color: #f1f0f1;
+
+  @include desktop {
+    background-color: #e5e5e6;
+  }
+
+  & .feedback__inner {
+    position: relative;
+    padding: 39px 0 35px;
+
+    @include desktop {
+      padding: 42px 0 60px;
+    }
+  }
+}
+
+.feedback--fourth-variant {
+  background-color: #f1f0f1;
+
+  & .feedback__inner {
+    position: relative;
+    padding: 39px 0 35px;
+
+    @include desktop {
+      padding: 42px 0 60px;
+    }
+  }
+}
+
+.feedback--fourth-variant .feedback__image {
+  top: 23px;
+  right: -60px;
+}
+
+.feedback__image {
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.feedback__heading {
+  margin-bottom: 7px;
+  font-size: 26.5px;
+  line-height: 34px;
+
+  @include desktop {
+    margin-bottom: 26px;
+    font-size: 51px;
+    line-height: 57px;
+    text-align: left;
+  }
+}
+
+.feedback__desc {
+  margin: 0 0 15px;
+  font-size: 15.5px;
+  line-height: 22px;
+
+  @include mobile-only {
+    padding: 0 70px;
+  }
+
+  @include desktop {
+    margin-bottom: 49px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.feedback__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 746px;
+  }
+}
+
+.feedback__image {
+  position: absolute;
+  top: 10px;
+  right: -165px;
+}
+
+.feedback__action {
+  display: none;
+
+  @include desktop {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 173px solid $themeColor;
+  }
+}
+
+.feedback--first-variant .feedback__action {
+  top: 174px;
+  right: 360px;
+}
+
+.feedback--second-variant .feedback__action {
+  bottom: 4px;
+  right: 302px;
+}
+
+.feedback__action-text {
+  position: absolute;
+  top: -158px;
+  left: -49px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}

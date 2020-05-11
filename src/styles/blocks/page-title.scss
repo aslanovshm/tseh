@@ -1,0 +1,59 @@
+.head {
+  @include mobile-only {
+    text-align: center;
+  }
+}
+
+.head__title {
+  margin: 0;
+  text-transform: uppercase;
+
+  @include desktop {
+    font-size: 72px;
+    line-height: 78px;
+  }
+
+  & span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 43px;
+    color: $themeColor;
+
+    @include desktop {
+      margin-bottom: 20px;
+      font-size: 110px;
+    }
+  }
+}
+
+.head__desc {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.head__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  @include mobile-only {
+    text-align: center;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+  }
+}
+
+.head__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

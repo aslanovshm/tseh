@@ -1,0 +1,90 @@
+.page-prices__head {
+  padding-bottom: 29px;
+
+  @include desktop {
+    padding-bottom: 46px;
+  }
+}
+
+.page-prices__breadcrumbs {
+  @include desktop {
+    margin-bottom: 63px;
+  }
+}
+
+.page-prices__head-title {
+  margin-bottom: 31px;
+
+  @include mobile-only {
+    font-size: 43px;
+  }
+
+  @include desktop {
+    margin-bottom: 34px;
+  }
+}
+
+.page-prices__head-desc {
+  @include mobile-only {
+    margin-bottom: 27px;
+  }
+
+  @include desktop {
+    width: 808px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.page-prices__head-button {
+  @include desktop {
+    width: 315px;
+    text-transform: initial;
+  }
+}
+
+.page-prices__categories {
+  padding-top: 31px;
+
+  @include desktop {
+    padding-top: 56px;
+  }
+}
+
+.page-prices__categories-caption {
+  margin-bottom: 25px;
+
+  @include mobile-only {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @include desktop {
+    margin-bottom: 49px;
+  }
+}
+
+.page-prices__categories-list {
+  margin-bottom: 37px;
+}
+
+.page-prices__item {
+  @include desktop {
+    min-width: 257px;
+  }
+}
+
+.page-prices__about-us {
+  padding-top: 40px;
+
+  @include desktop {
+    padding-top: 99px;
+    padding-bottom: 180px;
+  }
+}
+
+.page-prices__contacts {
+  @include mobile-only {
+    display: none;
+  }
+}

@@ -1,0 +1,95 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: #f1f0f1;
+  z-index: 101;
+
+  @media (max-width: 411px) {
+    right: 0;
+    bottom: 0;
+    overflow-x: scroll;
+  }
+
+  @include desktop {
+    top: -89px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.modal__inner {
+  box-sizing: border-box;
+  height: auto;
+  padding: 48px 50px 33px 49px;
+  text-align: center;
+
+  @include desktop {
+    width: 844px;
+    height: 600px;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  padding: 26px;
+  font-size: 0;
+
+  @include desktop {
+    top: -70px;
+    right: -18px;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 27px;
+    width: 30px;
+    height: 1px;
+    background-color: #aaaaaa;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__heading {
+  margin: 0 0 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fa3e4f;
+
+  @include desktop {
+    margin: 0 0 33px;
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+.modal__desc {
+  margin: 0 0 20px;
+  line-height: 27px;
+
+  @include desktop {
+    margin-bottom: 45px;
+    padding: 0 150px;
+    font-size: 26px;
+  }
+}
+
+.modal__submit {
+  margin-top: 3px;
+}

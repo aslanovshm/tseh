@@ -1,0 +1,16 @@
+.heading {
+  margin: 0;
+  font-size: 29.5px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include desktop {
+    font-size: 60px;
+    line-height: 66px;
+  }
+
+  &--red {
+    color: $themeColor;
+  }
+}

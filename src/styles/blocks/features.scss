@@ -1,0 +1,141 @@
+.features {
+  padding: 52px 0 27.5px;
+
+  @include desktop {
+    padding: 133px 0 77px;
+  }
+}
+
+.features__heading {
+  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 35px;
+
+  @include desktop {
+    margin-bottom: 90px;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: left;
+  }
+}
+
+.features__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include desktop {
+    justify-content: space-between;
+  }
+}
+
+.features__item {
+  position: relative;
+  padding-top: 63px;
+
+  @include mobile-only {
+    width: 133px;
+  }
+
+  @include desktop {
+    padding-top: 112px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+  }
+
+  &--design {
+    @include mobile-only {
+      order: 1;
+      margin-bottom: 48px;
+    }
+  }
+
+  &--design:before {
+    width: 30px;
+    height: 46px;
+    background-image: url("../images/icon-dress-mobile@1x.png");
+
+    @include desktop {
+      width: 53px;
+      height: 80px;
+      background-image: url("../images/icon-dress@1x.png");
+    }
+  }
+
+  &--sapr {
+    @include mobile-only {
+      order: 2;
+      margin-bottom: 48px;
+    }
+  }
+
+  &--sapr:before {
+    width: 40px;
+    height: 46px;
+    background-image: url("../images/icon-sarp-mobile@1x.png");
+
+    @include desktop {
+      width: 69px;
+      height: 80px;
+      background-image: url("../images/icon-sarp@1x.png");
+    }
+  }
+
+  &--sewing {
+    @include mobile-only {
+      order: 4;
+    }
+  }
+
+  &--sewing:before {
+    width: 47px;
+    height: 43px;
+    background-image: url("../images/icon-sewing-mobile@1x.png");
+
+    @include desktop {
+      top: 6px;
+      width: 80px;
+      height: 74px;
+      background-image: url("../images/icon-sewing@1x.png");
+    }
+  }
+
+  &--gradation {
+    @include mobile-only {
+      order: 3;
+    }
+  }
+
+  &--gradation:before {
+    top: 10px;
+    width: 41px;
+    height: 35px;
+    background-image: url("../images/icon-gradation-mobile@1x.png");
+
+    @include desktop {
+      top: 20px;
+      width: 71px;
+      height: 60px;
+      background-image: url("../images/icon-gradation@1x.png");
+    }
+  }
+}
+
+.features__title {
+  margin: 0;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 300;
+
+  @include desktop {
+    font-size: 25.5px;
+    line-height: 32px;
+  }
+}

@@ -1,0 +1,30 @@
+.page-header {
+  padding: 21px 0 28px;
+
+  @include desktop {
+    padding: 47px 0 40px;
+  }
+}
+
+.page-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile-only {
+    position: relative;
+  }
+}
+
+.page-header__contact {
+  @include mobile-only {
+    margin-right: 81px;
+  }
+}
+
+.page-header__contact-button {
+  @include mobile-only {
+    display: none;
+  }
+}

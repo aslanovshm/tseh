@@ -1,0 +1,27 @@
+.customers {
+  padding: 20px 0;
+  @include desktop {
+    padding: 78px 0 57px;
+  }
+}
+
+.customers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.customers__item {
+  @include mobile-only {
+    display: none;
+
+    &:nth-child(5),
+    &:nth-child(6) {
+      display: block;
+    }
+  }
+}

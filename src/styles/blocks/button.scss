@@ -1,0 +1,44 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 162px;
+  padding: 13px 10px;
+  font-size: 9.5px;
+  letter-spacing: 0.71px;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid $textColor;
+
+  @include desktop {
+    width: 270px;
+    padding: 25px 10px 25px;
+    font-size: 17px;
+    letter-spacing: 1.28px;
+  }
+
+  &--red {
+    width: 197px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $themeColor;
+    border: none;
+
+    @include desktop {
+      width: 375px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+  }
+
+  &--white {
+    padding-top: 14px;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  &--transparent {
+    border-color: #ffffff;
+  }
+}
